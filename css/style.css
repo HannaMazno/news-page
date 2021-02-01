@@ -1,0 +1,283 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+ul li {
+  list-style: none;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  max-height: 70px;
+  width: 100%;
+  background-color: #20be67;
+  padding: 15px 15px;
+  margin-bottom: 34px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.header_title {
+  font-size: 30px;
+  color: #fff;
+}
+
+.header_search form {
+  position: relative;
+}
+
+.header_search input {
+  height: 40px;
+  width: 463px;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+.header_search input::placeholder {
+  color: #d1d3d1;
+  padding-left: 20px;
+}
+
+.header_search form::after {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url('/img/search_icon.png') no-repeat;width:24px;height:24px;
+  top: 10px;
+  right: 10px;
+}
+
+.header_user {
+  width: 200px;
+  position: relative;
+  background: none;
+}
+
+.header_user::after {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url('/img/arrow.png') no-repeat;width:24px;height:24px;
+  top: 17px;
+  right: 0;
+}
+
+.header_user-inner {
+  display: flex;
+  align-items: center;
+}
+
+.haeder_user-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.header_user-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+}
+
+.content__inner {
+  display: flex;
+}
+
+.content__main {
+  flex-basis: 75%;
+  border-right: 1px solid #dee0df;
+}
+
+.news-title {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 0 24px 0;
+}
+
+.content__sidebar {
+  flex-basis: 25%;
+}
+
+.subscriber {
+  display: flex;
+  width: 700px;
+  border: 1px solid #dee0df;
+  border-right: none;
+  border-left: none;
+  padding: 30px 1px 20px 1px; 
+  margin: 0 20px 0 0 ;
+}
+
+.subscriber__info {
+  width: 100%;
+  margin: 0 16px 0 10px;
+ 
+ 
+}
+
+.subscriber__name {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+.subscriber__foto {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.subscriber-second {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.subscriber-second__foto {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 0 10px 0 0;
+}
+
+.change-time {
+  color: #d9dcda;
+}
+
+.vk-links {
+  display: flex;
+  align-items: baseline;
+  margin: 0 0 8px 0;
+}
+
+.vk-link {
+  text-decoration: none;
+  color: #878f8a;
+  font-size: 14px;
+  left: 18px;
+}
+.btn {
+  padding: 10px;
+  background: #f7f7f7;
+  border-radius: 2px;
+  margin: 0 9px 0 0;
+}
+
+.voting {
+  display: flex;
+  justify-content: space-between;
+}
+
+.voting__btn {
+  background: none;
+  margin: 0 30px 0 0;
+  color: #bec2bf;
+}
+
+.voting__btn.active {
+  color: #20be67;
+}
+
+.procent-reaction {
+  display: flex;
+}
+
+.procent {
+  width: 42px;
+  height: 19px;
+  background-color: #e74c3c;
+  border-radius: 2px;
+  color:#fff;
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.arrow__img {
+  margin: 5px 7px 5px 7px;
+
+}
+
+.content__sidebar {
+  padding: 0 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-title {
+  margin: 0 0 20px 0;
+}
+
+.user-list {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px 0;
+}
+
+.user-foto {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+}
+
+.side-title strong {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+
+
+.footer {
+  margin-top: auto;
+  border-top: 1px solid #dee0df;
+}
