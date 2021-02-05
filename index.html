@@ -3,23 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-<!-- локализация сайта, для русскоязычного сайта ru_RU -->
-<meta property="og:locale" content="ru_RU">
-<!-- тип контента, по умолчанию используется article -->
-<meta property="og:type" content="article">
-<!-- заголовок страницы, который будет выводится в записи социальной сети -->
-<meta property="og:title" content="META теги">
-<!-- описание страницы -->
-<meta property="og:description" content="Описание страницы про META теги">
-<!-- ссылка на изображение, которое будет публиковаться в записи -->
-<meta property="og:image" content="http://fls.guru/meta/img/bg.jpg">
-<!-- ссылка на текущую страницу -->
-<meta property="og:url" content="http://fls.guru/meta/ ">
-<!-- название сайта -->
-<meta property="og:site_name" content="Фрилансер по жизни">
   <title>news</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="page">
@@ -34,7 +21,7 @@
           </div>
           <button class="header_user">
             <div class="header_user-inner">
-              <div class="haeder_user-img">
+              <div class="haeder_user-foto foto">
                 <img src="img/Untitled-2.jpg" alt="">
               </div>
               <strong class="header_user-name">Джорджия
@@ -52,7 +39,7 @@
               Новости
             </div>
             <div class="subscriber">
-              <div class="subscriber__foto">
+              <div class="subscriber__foto foto">
                 <img src="img/Untitled-2.jpg" alt="">
               </div>
               <div class="subscriber__info">
@@ -61,7 +48,7 @@
                   <div class="change-time">1 мин</div>
                 </div>
                 <div class="subscriber-second">
-                  <div class="subscriber-second__foto">
+                  <div class="subscriber-second__foto foto">
                     <img src="img/Untitled-3.jpg" alt="">
                   </div>
                   <div class="subscriber-second__name"><strong>Андрей Шульженко</strong>
@@ -71,7 +58,7 @@
                    <button class="btn-vk btn">
                      <a  class="vk-link" href="Vkontakte">Vkontakte</a>
                    </button> 
-                    <span>c</span><a href=" vk.com/s0ulmate на ">vk.com/s0ulmate</a><span> на</span> <a href=" vk.com/s0ulmate на ">vk.com/s0ulmate</a>
+                    <span>c</span><a class="href=" vk.com/s0ulmate на ">vk.com/s0ulmate</a><span> на</span> <a href=" vk.com/s0ulmate на ">vk.com/s0ulmate</a>
                 </div>
                 <div class="voting">
                   <div class="boolean-reaction">
@@ -96,68 +83,303 @@
                 </div>
               </div>
             </div>
+            <div class="subscriber">
+              <div class="subscriber__foto foto">
+                <img src="img/Untitled-2.jpg" alt="">
+              </div>
+              <div class="subscriber__info">
+                <div class="subscriber__name">
+                  <p><strong>Илья Верхолов</strong> <span>поменял в досье </span></p>
+                  <div class="change-time">1 мин</div>
+                </div>
+                <div class="subscriber-second">
+                  <div class="subscriber-second__foto foto">
+                    <img src="img/Untitled-3.jpg" alt="">
+                  </div>
+                  <div class="subscriber-second__name"><strong>Андрей Шульженко</strong>
+                 </div>
+                </div>
+                <div class="vk-links">
+                   <button class="btn-vk btn">
+                     <a  class="vk-link" href="Vkontakte">Доход</a>
+                   </button> 
+                  <span>c</span> <strong>Бедный</strong> <span>на</span>
+                  <strong>Состоятельный</strong>
+                </div>
+                <div class="voting">
+                  <div class="boolean-reaction">
+                    <button class="voting__btn active">
+                      <img src="img/green_smile.png" alt="">
+                      <span>Правда: 1</span>
+                    </button>
+                    <button class="voting__btn">
+                      <img src="img/red_smile.png" alt="">
+                      <span>Ложь: 1</span>
+                    </button>
+                  </div>
+                  <div class="procent-reaction">
+                    <div class="procent">14%</div>
+                    <div class="arrow">
+                      <img class="arrow__img" src="img/arrow_down.png" alt="">
+                    </div>
+                    <div class="procent">
+                      18%
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="subscriber">
+              <div class="subscriber__foto foto">
+                <img src="img/Untitled-2.jpg" alt="">
+              </div>
+              <div class="subscriber__info">
+                <div class="subscriber__name">
+                  <p><strong>Илья Верхолов</strong> <span>поменял в досье </span></p>
+                  <div class="change-time">1 мин</div>
+                </div>
+                <div class="subscriber-second">
+                  <div class="subscriber-second__foto foto">
+                    <img src="img/Untitled-3.jpg" alt="">
+                  </div>
+                  <div class="subscriber-second__name"><strong>Андрей Шульженко</strong>
+                 </div>
+                </div>
+                <div class="commentator">
+                  <div class="coment-wrap">
+                    <div class="commentator__foto foto">
+                      <img src="img/Untitled-2.jpg" alt="">
+                    </div>
+                    <div class="commentator-info">
+                      <div class="commentator__name">Василий</div>
+                      <div class="comment">
+                        <p>Одолжил ему денег. Три года никак не отдаст. Засужу!</p>
+                      </div>
+                      <div class="boolean-reaction">
+                        <button class="voting__btn active">
+                          <img src="img/green_smile.png" alt="">
+                          <span>Правда: 1</span>
+                        </button>
+                        <button class="voting__btn">
+                          <img src="img/red_smile.png" alt="">
+                          <span>Ложь: 1</span>
+                        </button>
+                        <button class="voting__btn">
+                          <img src="img/neutral_smile.png" alt="">
+                          <span>Пофиг: 1</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                   <!-- <div class="big-foto foto">
+                    <img src="img/Untitled-1.jpg" alt="">
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="subscriber">
+              <div class="subscriber__foto foto">
+                <img src="img/Untitled-2.jpg" alt="">
+              </div>
+              <div class="subscriber__info">
+                <div class="subscriber__name">
+                  <p><strong>Илья Верхолов</strong> <span>поменял в досье </span></p>
+                  <div class="change-time">1 мин</div>
+                </div>
+                <div class="subscriber-second">
+                  <div class="subscriber-second__foto foto">
+                    <img src="img/Untitled-3.jpg" alt="">
+                  </div>
+                  <div class="subscriber-second__name"><strong>Андрей Шульженко</strong>
+                 </div>
+                </div>
+                <div class="commentator">
+                  <div class="coment-wrap">
+                    <div class="commentator__foto foto">
+                      <img src="img/Untitled-2.jpg" alt="">
+                    </div>
+                    <div class="commentator-info">
+                      <div class="commentator__name">Василий</div>
+                      <div class="comment">
+                        <p>Одолжил ему денег. Три года никак не отдаст. Засужу!</p>
+                      </div>
+                      <div class="boolean-reaction">
+                        <button class="voting__btn active">
+                          <img src="img/green_smile.png" alt="">
+                          <span>Правда: 1</span>
+                        </button>
+                        <button class="voting__btn">
+                          <img src="img/red_smile.png" alt="">
+                          <span>Ложь: 1</span>
+                        </button>
+                        <button class="voting__btn">
+                          <img src="img/neutral_smile.png" alt="">
+                          <span>Пофиг: 1</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="big-foto foto">
+                    <img src="img/Untitled-1.jpg" alt="">
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="subscriber">
+              <div class="subscriber__foto foto">
+                <img src="img/Untitled-2.jpg" alt="">
+              </div>
+              <div class="subscriber__info">
+                <div class="subscriber__name">
+                  <p><strong>Илья Верхолов</strong> <span>поменял в досье </span></p>
+                  <div class="change-time">1 мин</div>
+                </div>
+                <div class="subscriber-second">
+                  <div class="subscriber-second__foto foto">
+                    <img src="img/Untitled-3.jpg" alt="">
+                  </div>
+                  <div class="subscriber-second__name"><strong>Андрей Шульженко</strong>
+                 </div>
+                </div>
+                <div class="huge-foto foto">
+                  <img src="img/huge_foto.jpeg" alt="">
+                </div>
+                <div class="likers">
+                  <img src="img/green_smile.png" alt="">
+                  <span>Нравиться: 1678</span>
+                </div>
+              </div>
+            </div>
+            <div class="subscriber">
+              <div class="subscriber__foto foto">
+                <img src="img/Untitled-2.jpg" alt="">
+              </div>
+              <div class="subscriber__info">
+                <div class="subscriber__name">
+                  <p><strong>Илья Верхолов</strong> <span>поменял в досье </span></p>
+                  <div class="change-time">1 мин</div>
+                </div>
+                <div class="subscriber-second">
+                  <div class="subscriber-second__foto foto">
+                    <img src="img/Untitled-3.jpg" alt="">
+                  </div>
+                  <div class="subscriber-second__name"><strong>Андрей Шульженко</strong>
+                 </div>
+                </div>
+                <div class="flash">
+                  <div class="minus counter"><span>-0</span></div>
+                  <div class="event"><span>flash</span></div>
+                  <div class="plus counter"><span>+0</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="subscriber">
+              <div class="subscriber__foto anonym foto">
+                <img src="img/qv.png" alt="">
+              </div>
+              <div class="subscriber__info">
+                <div class="subscriber__name">
+                  <p><strong>Илья Верхолов</strong> <span>поменял в досье </span></p>
+                  <div class="change-time">1 мин</div>
+                </div>
+                <div class="subscriber-second">
+                  <div class="subscriber-second__foto anonym foto">
+                    <img src="img/Untitled-3.jpg" alt="">
+                  </div>
+                  <div class="subscriber-second__name"><strong>Андрей Шульженко</strong>
+                 </div>
+                </div>
+                <div class="commentator">
+                  <div class="coment-wrap">
+                    <div class="commentator__foto anonym foto">
+                      <img src="img/qv.png" alt="">
+                    </div>
+                    <div class="commentator-info">
+                      <div class="commentator__name">Василий</div>
+                      <div class="comment">
+                        <p>Одолжил ему денег. Три года никак не отдаст. Засужу!</p>
+                      </div>
+                      <div class="boolean-reaction">
+                        <button class="voting__btn active">
+                          <img src="img/green_smile.png" alt="">
+                          <span>Правда: 1</span>
+                        </button>
+                        <button class="voting__btn">
+                          <img src="img/red_smile.png" alt="">
+                          <span>Ложь: 1</span>
+                        </button>
+                        <button class="voting__btn">
+                          <img src="img/neutral_smile.png" alt="">
+                          <span>Пофиг: 1</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
           </div>
           <div class="content__sidebar">
             <div class="side-title">
               <strong>Недавно <br>просмотренные
               </strong>
             </div>
-            <div class="user-list">
+            <div class="subscribers-list">
+              <div class="user-foto foto">
+                <img src="img/Untitled-2.jpg" alt="">
+              </div>
+              <div class="user-name">Илья Верхолов</div>
+            </div>
+            <div class="subscribers-list">
               <div class="user-foto">
                 <img src="img/Untitled-2.jpg" alt="">
               </div>
               <div class="user-name">Илья Верхолов</div>
             </div>
-            <div class="user-list">
+            <div class="subscribers-list">
+              <div class="user-foto foto">
+                <img src="img/Untitled-2.jpg" alt="">
+              </div>
+              <div class="user-name">Илья Верхолов</div>
+            </div>
+            <div class="subscribers-list">
               <div class="user-foto">
                 <img src="img/Untitled-2.jpg" alt="">
               </div>
               <div class="user-name">Илья Верхолов</div>
             </div>
-            <div class="user-list">
-              <div class="user-foto">
+            <div class="subscribers-list">
+              <div class="user-foto foto">
                 <img src="img/Untitled-2.jpg" alt="">
               </div>
               <div class="user-name">Илья Верхолов</div>
             </div>
-            <div class="user-list">
-              <div class="user-foto">
+            <div class="subscribers-list">
+              <div class="user-foto foto">
                 <img src="img/Untitled-2.jpg" alt="">
               </div>
               <div class="user-name">Илья Верхолов</div>
             </div>
-            <div class="user-list">
-              <div class="user-foto">
+            <div class="subscribers-list">
+              <div class="user-foto foto">
                 <img src="img/Untitled-2.jpg" alt="">
               </div>
               <div class="user-name">Илья Верхолов</div>
             </div>
-            <div class="user-list">
-              <div class="user-foto">
+            <div class="subscribers-list">
+              <div class="user-foto foto">
                 <img src="img/Untitled-2.jpg" alt="">
               </div>
               <div class="user-name">Илья Верхолов</div>
             </div>
-            <div class="user-list">
-              <div class="user-foto">
+            <div class="subscribers-list">
+              <div class="user-foto foto">
                 <img src="img/Untitled-2.jpg" alt="">
               </div>
               <div class="user-name">Илья Верхолов</div>
             </div>
-            <div class="user-list">
-              <div class="user-foto">
-                <img src="img/Untitled-2.jpg" alt="">
-              </div>
-              <div class="user-name">Илья Верхолов</div>
-            </div>
-            <div class="user-list">
-              <div class="user-foto">
-                <img src="img/Untitled-2.jpg" alt="">
-              </div>
-              <div class="user-name">Илья Верхолов</div>
-            </div>
-            <div class="user-list">
-              <div class="user-foto">
+            <div class="subscribers-list">
+              <div class="user-foto foto">
                 <img src="img/Untitled-2.jpg" alt="">
               </div>
               <div class="user-name">Илья Верхолов</div>
@@ -166,7 +388,23 @@
         </div>
       </div>
     </div>
-    <footer class="footer">1</footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="copyright"><span>FindRum © 2015</span></div>
+          <div class="numbers"><p><span>Мобильных телефонов:</span> 12 234 233</p>
+            <p><span>Номеров автомобилей:</span>234 324</p></div>
+            <div class="job">
+              <p><span>Мест работы: </span>23 113 423</p>
+              <p><span>Должностей:</span> 223 423</p>
+            </div>
+         <div class="edded-contacts">
+           <p><span>Всего контактов:</span> 45 000 000</p>
+           <p><span>Добавлено вчера:</span> 234</p>
+         </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 </html>

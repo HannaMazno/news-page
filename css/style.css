@@ -22,6 +22,7 @@ html, body {
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 input, button, textarea {
@@ -107,14 +108,29 @@ ul li {
   align-items: center;
 }
 
-.haeder_user-img {
+.haeder_user-foto {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  overflow: hidden;
   margin-right: 10px;
   flex-shrink: 0;
 }
+
+.foto {
+  display: flex;
+  border-radius: 50%;
+  overflow: hidden;
+  /* position: relative; */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
+  object-fit: fill;  
+} 
 
 .header_user-name {
   overflow: hidden;
@@ -148,15 +164,14 @@ ul li {
   border: 1px solid #dee0df;
   border-right: none;
   border-left: none;
+  border-bottom: none;
   padding: 30px 1px 20px 1px; 
   margin: 0 20px 0 0 ;
 }
 
 .subscriber__info {
   width: 100%;
-  margin: 0 16px 0 10px;
- 
- 
+  margin: 0 0 0 10px;
 }
 
 .subscriber__name {
@@ -189,6 +204,19 @@ ul li {
 
 .change-time {
   color: #d9dcda;
+}
+
+span {
+  margin: 0 5px 0 5px;
+  color: #b8bcb9;
+}
+
+.flash span {
+  color: #919893;
+}
+
+strong {
+  color: #929995;
 }
 
 .vk-links {
@@ -256,7 +284,7 @@ ul li {
   margin: 0 0 20px 0;
 }
 
-.user-list {
+.subscribers-list {
   display: flex;
   align-items: center;
   margin: 0 0 15px 0;
@@ -275,9 +303,91 @@ ul li {
   line-height: 25px;
 }
 
+.commentator {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #d4d4d4;
+  width: 100%;
+  padding: 10px 10px 15px 10px;
+}
 
+.commentator__foto {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+}
 
-.footer {
+.commentator__name {
+  color: #bec2bf;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+}
+
+.comment {
+  margin: 0 0 15px 0;
+}
+
+.coment-wrap {
+  display: flex;
+}
+
+.big-foto {
+  width: 80px;
+  height: 80px;
+  background:#20be67;
+  border-radius: 0;
+}
+
+.huge-foto {
+ border-radius: 0;
+ margin: 0 0 15px 0;
+}
+
+.flash {
+  display: flex;
+  text-align: center;
+}
+
+.counter {
+  width: 36px;
+  height: 30px;
+  background-color: #dee0df;
+}
+
+.event, .counter {
+  padding: 10px 0;
+}
+.event{
+  width: 50px;
+  height: 30px;
+  background-color: #f7f7f7;
+}
+
+.anonym {
+  background-color: #20be67;
+  /* position: relative; 
+} */
+
+/* .anonym img {
+  position: absolute; 
+  top: 18px;
+  left: 38%; 
+} */
+}
+
+.footer{
   margin-top: auto;
   border-top: 1px solid #dee0df;
+  padding: 31px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer p {
+  margin: 0 0 12px 0;
 }
